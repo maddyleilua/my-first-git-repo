@@ -1,0 +1,45 @@
+open terminal panel:
+ctrl + `
+
+check git install version:
+git -v
+
+show the file/folder list in current directory:
+drs/ls
+
+change directory: 
+cd <directory_path>
+
+Go up one directory: 
+cd ..
+
+git condig --global user.name
+
+right click on folder and open integrated terminal
+
+git command:
+1. initialised empty git respository
+    git init
+
+2. check status
+    git status
+
+3. add to staging area
+    git add filename
+    a. add single file 
+        git add filename
+    b. add multiple file
+        git add filename filename filename
+    c. add all file
+        git add .
+
+4. Commit with a message 
+    git commit -m "commit message"
+
+5. Chceck the log
+    git log
+
+6. Clone the remote respository
+    git clone PasteTheRepoURLHere
+
+    shortcut: type 

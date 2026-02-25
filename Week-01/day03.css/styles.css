@@ -1,0 +1,87 @@
+h1 {
+    color: rgb(47, 11, 70);
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(221, 113, 207);
+}
+    .btn {
+        background-color: rgb(227, 197, 255);
+    }
+
+    #header{
+        color: rgb(40, 26, 236);
+    }
+
+    /* !important Descendant selector! */
+#container li {
+background-color: rgb(223, 157, 243);
+}
+
+/* select all <b> insdie of ID container */
+#container b {
+    color: rgb(119, 41, 192);
+}
+
+/* !important Child Selector */
+/* li>b will work */
+/* tag 1 + tag 1 = 2 */
+ol>b {
+color:blueviolet
+}
+/* <b> is not the direct child of <ol>, color wont change */
+
+li>b {
+    color: rgb(128, 67, 185);
+}
+
+/* !important Grouping selector */
+/* 1, 1, 1 */
+h2, h3, h4 {
+    background-color: rgb(237, 217, 255);
+    color: rgb(164, 85, 255);
+}
+
+.button:hover {
+background-color: blueviolet;
+font-size: larger;
+color: rgb(254, 192, 255);
+}
+
+.button:active {
+    background-color: brown;
+}
+
+.button:focus {
+    background-color: aquamarine;
+}
+
+
+
+/* !important CSS specificity */
+
+
+/* ID weight 100 */
+/*  (DIV)1 + (#p-id)100 = 101 weight so heavier takes over */
+div #p-id {
+    color: chartreuse;
+}
+#p-id{
+    color: blueviolet;
+}
+
+/* Class selector weight 10 */
+.p-class {
+    color: rgb(17, 0, 255);
+}
+
+/* always recent code takes over, unless weight is higher*/
+.p-class {
+    color: brown;
+}
+
+p {
+    color: darkgreen !important;
+    font-size: x-large;
+    /* !important weight 100000 */
+
+}

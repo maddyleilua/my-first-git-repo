@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+ 
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+ 
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+ 
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+ 
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+ 
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+ 
+nav {
+    flex: 1;
+    text-align: right;
+}
+ 
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+ 
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+ 
+nav ul li a:hover {
+    color: #ff5ea2;
+}
+
+@media only screen and (max-width: 700px) {
+ 
+    /* Step 1 Reveal the 'burger menu' */
+    .menu-icon {
+        display: block;
+    }
+ 
+    .menu-icon-label {
+        display: block;
+       
+    }
+ 
+}
+ 
+nav ul {
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+ 
+        /* align the list items for mobile */
+        text-align: center;
+    }
+ 
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+ 
+    nav ul li a {
+        color: #fff;
+    }
+ 
+/* STEP 3: Hide the Menu
+       Now that it looks right, "squash" it, so it's hidden by default. */
+    #menuList {
+        /* Squash the height to zero */
+        max-height: 0px;      
+        /* Hide any "spillover" content, may be invis. due to browser but its still there!  */
+        overflow: hidden;
+        /* Setup transition */
+        transition: max-height 0.5s ease-in-out;    
+    }
+ 
+/* STEP 4: The Interaction Logic
+       When the hidden checkbox is checked, grow the menu back to its full size! */
+    #menu-toggle:checked ~ nav #menuList {
+        max-height: 200px;    /* Give it enough height to show all links */
+    }
+ 

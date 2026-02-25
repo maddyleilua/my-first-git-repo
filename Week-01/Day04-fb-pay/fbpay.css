@@ -1,0 +1,134 @@
+/* Inherit its font familt to all sub elements */
+body {
+    font-family: Tahoma;
+}
+
+main {
+    display: flex;
+    /* background-color: blue; */
+
+}
+
+#left {
+    width: 45%;
+    /* background-color: aqua; */
+    margin: 30px 100px;
+}
+
+#right {
+    width: 55%;
+    /* background-color: aquamarine; */
+}
+
+.h1{
+    color: pink;
+}
+
+/* image as background */
+/* setting image makes it repeat itself */
+/* #right {
+    background-image: url(https://flipweb.org/wp-content/uploads/2019/11/Facebook-Pay.png);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 100px;
+} */
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px dotted red; */
+    gap: 40px;
+    margin: 50px 100px;
+}
+
+.nav-link {
+    list-style: none;
+    /* border: 1px blue solid; */
+    padding: 8px 15px;
+    margin: 2px 5px;
+}
+
+
+.btn {
+    background-color: rgb(225, 231, 250);
+}
+
+.btn:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin:100px 100px 10px 100px
+}
+
+
+p {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 10px 100px 100px
+} */
+
+/* weight 100+1=101 */
+#left h1 {
+    font-size: 40px;
+}
+
+#left p {
+    margin: 35px 0px;
+}
+
+.chat-btn {
+    padding: 14px 25px;
+    width: 200px;
+    border: none;
+    margin: 20px 0px;
+    font-weight: 700;
+    /* button element doesnt inherit parent elements font family automatically */
+    font-family: inherit;
+
+}
+
+span {
+color: blue;
+
+}
+
+.image {
+    width:90%;
+}
+
+
+a {
+    color: rgb(25, 0, 255);
+    text-decoration: none;
+}
+
+
+
+
+/* box model */
+/* .cat { */
+    /* border: 2px rgb(255, 42, 219) solid; */
+    /* padding-top: 10px; 
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-left: 50px; */
+
+    /* short cut for top right bottom left */
+    /* padding: 20px 30px 40px 50px; */
+
+    /* shortcut for top/bottom */
+    /* padding: 20px 50px */
+
+    /* short cut for all directions */
+    /* padding: 30px;
+
+    margin-top: 30px;
+    margin-left: 50px; */
+/* } */
+

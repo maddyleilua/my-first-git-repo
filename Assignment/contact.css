@@ -1,0 +1,40 @@
+body {
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    margin: 0;
+    font-family: "Comic Sans MS";
+    /* background-color: rgb(112, 55, 126); */
+    color: rgb(138, 19, 122);
+}
+
+
+* {
+  /* border: 1px dotted rgb(255, 255, 255); */
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.header {
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 181, 255);
+  color: aliceblue; 
+}
+.left {
+    flex-basis: 30%;
+    background-color: rgb(231, 202, 255);
+    padding: 20px;
+}
+
+.form {
+    padding: 60px
+
+}
+
+.textarea {
+    color: rgb(119, 14, 93)
+}
+

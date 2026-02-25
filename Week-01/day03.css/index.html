@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS 2.0</title>
+    <!-- External styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- This is internal styling code below -->
+    <style>
+      p {
+        color: rgb(235, 148, 238);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is my second webpage 😘</h1>
+    <p>This is internal styling wowee</p>
+    <!-- Inline Styling weight 1000 -->
+    <p>This is inline styling</p>
+    <p style="color: rgb(114, 41, 156); font-size: larger">
+      This is for inline styling
+    </p>
+    <button class="btn">Class selector</button>
+    <div id="header">ID selector</div>
+
+    <!-- Descendent selector -->
+    <div id="container">
+      <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li><b>Water</b></li>
+      </ul>
+    </div>
+
+    <!-- Child selector -->
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li><b>Cherry</b></li>
+    </ol>
+
+    <!-- Grouping Selector -->
+
+    <h2>Grouping selector heading 2</h2>
+    <h3>Grouping selector heading 3</h3>
+    <h4>Grouping selector heading 4</h4>
+
+    <!-- Pseudo class selector -->
+    <button class="button">HOVER ME!</button>
+
+    <!-- CSS specificity -->
+     <div>
+        <p class="p-class" id="p-id"> This is a paragraph for CSS specificity. </p>
+
+     </div>
+  </body>
+</html>

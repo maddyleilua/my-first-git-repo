@@ -1,0 +1,141 @@
+body {
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    margin: 0;
+    font-family: "Comic Sans MS";
+}
+
+* {
+    /* border: 1px dotted rgb(255, 255, 255); */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.shadow-dance-text {
+    display: flex;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0 #da62ff, 10px 10px 0 #f81dbd;
+    animation: shadow-dance 2s infinite;
+    /* border: #fff solid; */
+}
+
+@keyframes shadow-dance {
+
+    0%,
+    100% {
+        text-shadow: 5px 5px 0 #b441d7, 10px 10px 0 #00d4ff;
+    }
+
+    50% {
+        text-shadow: -5px -5px 0 #e367d8, -10px -10px 0 #872271;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    .shadow-dance-text,
+    {
+    font-size: 24px;
+    background-color: rgb(251, 0, 255);
+}
+} */
+
+
+.header {
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 181, 255);
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(255, 150, 248);
+    justify-content: space-around;
+}
+
+/* Style navigation bar links */
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(135, 171, 255);
+    color: rgb(47, 0, 255);
+}
+
+
+.section {
+    display: flex;
+}
+
+/* left column */
+/* flex-basis is for the width of flex-item */
+.left {
+    /* width: 30%; */
+    flex-basis: 30%;
+    background-color: rgb(231, 202, 255);
+    padding: 20px;
+}
+
+.h3 {
+    color: #872271;
+}
+
+.imgph {
+    background-color: rgb(151, 212, 255);
+    width: 25%;
+    height: 25%;
+    padding: 20px;
+}
+
+
+.imgph2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 132, 247);
+    width: 100%;
+    /* height: ; */
+    padding: 20px;
+    object-fit: cover;
+
+}
+
+/* right column */
+.right {
+    /* width: 70%; */
+    flex-basis: 70%;
+    /* background-color: rgb(43, 162, 226); */
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* apply css rules when screen size is under 768px */
+    .navbar,
+    .section {
+        flex-direction: column;
+    }
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    .navbar {
+        font-size: 12px;
+        background-color: rgb(251, 0, 255);
+    }
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(253, 181, 255);
+    color: white;
+}
